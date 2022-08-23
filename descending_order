@@ -22,3 +22,9 @@ def descending_order(num):
     return_this = int("".join(int_list))
     
     return return_this
+
+### Another way to do this
+def descending_order(num):
+    num = sorted([char for char in str(num)], reverse = True)
+    num = int("".join(num))
+    return num
