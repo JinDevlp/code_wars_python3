@@ -16,7 +16,7 @@ def descending_order(num):
     str_list = str(num)
     
     # Turn strings into a list
-    int_list = [str(num) for num in sorted(str_list, reverse = True)]
+    int_list = [num for num in sorted(str_list, reverse = True)]
     
     # Turn strings into int and join
     return_this = int("".join(int_list))
