@@ -12,6 +12,12 @@
 # There will always be at least one number in the input string.
 # Output string must be two numbers separated by a single space, and highest number is first.
 
+
+- Numbers in given list are in string format
+- Since the numbers are in string format, I need to turn it into integers
+- I need to split the numbers into individual string before I turn them into integers
+- Find the max number and min number
+
 def high_and_low(numbers):
     nums = [int(num) for num in numbers.split()]
     return f"{max(nums)} {min(nums)}"
