@@ -26,3 +26,12 @@ def get_middle(s):
             middle_count = len(s) // 2
             answer = s[middle_count]
             return answer
+
+
+# A more pythonic way of doing this:
+def get_middle(s):
+    # divide the length of s by 2. You will get the index and odd boolean value.
+    # if odd == 1: True
+    # if odd == 2: False its even
+    index, odd = divmod(len(s), 2)
+    return s[index] if odd else s[index - 1:index + 1]
